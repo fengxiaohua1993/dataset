@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 自定义属性的设置规则 以data-开头 -->
+  <div class="box" data-src="./images/pic1.png" data-index="1"></div>
+
+
+
+  <script>
+    //获取元素----以下代码全部为原生代码
+
+    //box元素的获取：
+    var box = document.getElementsByClassName('box')[0];
+
+    //获取第一个box的全部的自定义属性
+    var datas = box.dataset;
+    console.log(datas);
+    /*输出结果：
+      DOMStringMap
+      index: "1"
+      src: "./images/pic1.png"
+      */
+
+    //获取第一个box的data-src的自定义属性的属性值
+    var src = box.dataset.src;
+    console.log(src);
+    /*
+    输出结果：
+    ./images/pic1.png
+    */
+  </script>
+</body>
+</html>

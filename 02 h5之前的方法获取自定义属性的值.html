@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 自定义属性的设置规则 以data-开头 -->
+  <div class="box" data-src="./images/pic1.png" data-index="1"></div>
+
+
+
+  <script>
+    //获取元素----以下代码全部为原生代码
+
+    //box元素的获取：
+    var box = document.getElementsByClassName('box')[0];
+
+    var srcHtml = box.getAttribute('data-src');
+    console.log(srcHtml);
+    /*
+    输出结果:
+    ./images/pic1.png
+    */
+  </script>
+</body>
+</html>

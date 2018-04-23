@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- 引入jQuery -->
+  <script src="./jquery-1.12.4.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="box" data-src="./images/haha.png"></div>
+  <script>
+    var src = $('.box').data('src');
+    console.log(src);
+    /* 
+    输出结果:
+    ./images/haha.png
+    */
+    var data = $('.box').data();
+    console.log(data);
+    /*
+    输出结果：是一个对象 将box中所有的自定义属性放在一起
+    Object
+    src: "./images/haha.png"
+    */
+    // 01 dataset-H5中新增的可以获取及设置自定义属性的方法
+    // 02 h5之前的方法获取自定义属性的值
+    // 03 jQuery中获取自定义属性的值
+  </script>
+</body>
+</html>
